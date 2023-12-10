@@ -13,7 +13,11 @@ var app = express();
 const cors = require("cors");
 app.use(
   cors({
-    origin: "https://globalnewsnexus-frontend.vercel.app/",
+    origin: [
+      "https://globalnewsnexus-frontend.vercel.app/",
+      "https://globalnewsnexus-frontend-git-main-niamordev.vercel.app/",
+      "https://globalnewsnexus-frontend-git-main-niamordev.vercel.app/",
+    ],
     optionsSuccessStatus: 200,
   })
 );
