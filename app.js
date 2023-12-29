@@ -11,16 +11,7 @@ var usersRouter = require("./routes/users");
 var app = express();
 
 const cors = require("cors");
-app.use(
-  cors({
-    origin: [
-      "https://globalnewsnexus-frontend.vercel.app/",
-      "https://globalnewsnexus-frontend-git-main-niamordev.vercel.app/",
-      "https://globalnewsnexus-frontend-git-main-niamordev.vercel.app/",
-    ],
-    optionsSuccessStatus: 200,
-  })
-);
+app.use(cors());
 
 app.use(logger("dev"));
 app.use(express.json());
